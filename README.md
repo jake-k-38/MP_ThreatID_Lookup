@@ -27,6 +27,9 @@ or
 ```
 .\ThreatID_Lookup.ps1 2147519003 id2 id3
 ```
+
+Sample output
+
 ```
 Do you want to export the threat catalog data to CSV? (Yes/No): no
 Using existing 'threatCatalog.csv' for lookup.
