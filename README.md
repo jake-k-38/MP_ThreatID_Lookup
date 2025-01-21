@@ -24,16 +24,27 @@ Simply just run the script ThreatID_Lookup.ps1 to start the script
 .\ThreatID_Lookup.ps1
 ```
 ```
-Do you want to export the threat catalog data to CSV? (Yes/No): yes
-Exporting data to CSV...
-Data has been exported to 'threatCatalog.csv'.
+Do you want to export the threat catalog data to CSV? (Yes/No): no
+Using existing 'threatCatalog.csv' for lookup.
 Loading data from 'threatCatalog.csv'...
 Loaded 327919 records from 'threatCatalog.csv'.
-Data has been loaded into the table called, threatCatalog(structed by ThreatID)...
-Enter the ThreatID you want to search for: 2147765896
+Data has been loaded into the table called 'threatCatalog' (structured by ThreatID)...
+Enter a list of ThreatIDs you want to search for (comma-separated): 2147519003, 2147519004, 2147765896
+Searching for ThreatID: 2147519003
+
+Found ThreatID: 2147519003
+Name: Virus:DOS/EICAR_Test_File
+Severity: 5
+Category ID: 42
+
+Searching for ThreatID: 2147519004
+
+ThreatID 2147519004 not found in the catalog.
+
 Searching for ThreatID: 2147765896
+
 Found ThreatID: 2147765896
 Name: Trojan:Win32/PswStealer!MSR
 Severity: 5
-Do you want to search for another ThreatID? (Yes/No):
+Category ID: 8
 ```
