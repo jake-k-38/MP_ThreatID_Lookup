@@ -23,6 +23,10 @@ Simply just run the script ThreatID_Lookup.ps1 to start the script
 ```
 .\ThreatID_Lookup.ps1
 ```
+or
+```
+.\ThreatID_Lookup.ps1 2147519003 id2 id3
+```
 ```
 Do you want to export the threat catalog data to CSV? (Yes/No): no
 Using existing 'threatCatalog.csv' for lookup.
@@ -47,4 +51,45 @@ Found ThreatID: 2147765896
 Name: Trojan:Win32/PswStealer!MSR
 Severity: 5
 Category ID: 8
+```
+
+```
+.\ThreatID_Lookup.ps1 2147519003 2147812351
+Using provided ThreatID(s): 2147519003,2147812351
+Using existing 'threatCatalog.csv' for lookup.
+Loading data from 'threatCatalog.csv'...
+Loaded 327919 records from 'threatCatalog.csv'.
+Data has been loaded into the table called 'threatCatalog' (structured by ThreatID)...
+Searching for ThreatID: 2147519003
+
+Found ThreatID: 2147519003
+Name: Virus:DOS/EICAR_Test_File
+Severity: 5
+Category ID: 42
+
+Searching for ThreatID: 2147812351
+
+Found ThreatID: 2147812351
+Name: Behavior:Win32/DumpLsass.C!attk
+Severity: 5
+Category ID: 46
+
+Do you want to search for another set of ThreatIDs? (Yes/No): yes
+Enter a list of ThreatIDs you want to search for (comma-separated): 224688,2147828166
+Searching for ThreatID: 224688
+
+Found ThreatID: 224688
+Name: PUA:Win32/EICAR_Test_File
+Severity: 1
+Category ID: 27
+
+Searching for ThreatID: 2147828166
+
+Found ThreatID: 2147828166
+Name: Trojan:Win32/Leonem
+Severity: 5
+Category ID: 8
+
+Do you want to search for another set of ThreatIDs? (Yes/No): no
+Exit loop, Goodbye!
 ```
