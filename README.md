@@ -7,6 +7,7 @@ https://learn.microsoft.com/en-us/powershell/module/defender/get-mpthreatcatalog
 * [General info](#general-info)
 * [Getting started](#getting-started)
 * [Usage](#usage)
+* [Sample](#sample)
 
 ## General info
 While the built-in Get-MpThreatCatalog -ThreatID <id> command is available, it lacks performance, particularly when multiple ThreatIDs need to be researched rapidly. The script offers faster lookups compared to the default Get-MpThreatCatalog -ThreatID <id> command, making it ideal for consecutive ThreatID queries.
@@ -22,14 +23,15 @@ Open an administrative PowerShell prompt and run ```Set-ExecutionPolicy Unrestri
 Simply just run the script ThreatID_Lookup.ps1 to start the script
 ```
 .\ThreatID_Lookup.ps1
+
 ```
-or
+
 ```
 .\ThreatID_Lookup.ps1 2147519003 id2 id3
+
 ```
 
-Sample output
-
+## Sample
 ```
 Do you want to export the threat catalog data to CSV? (Yes/No): no
 Using existing 'threatCatalog.csv' for lookup.
@@ -54,8 +56,8 @@ Found ThreatID: 2147765896
 Name: Trojan:Win32/PswStealer!MSR
 Severity: 5
 Category ID: 8
-```
 
+```
 ```
 .\ThreatID_Lookup.ps1 2147519003 2147812351
 Using provided ThreatID(s): 2147519003,2147812351
@@ -95,4 +97,5 @@ Category ID: 8
 
 Do you want to search for another set of ThreatIDs? (Yes/No): no
 Exit loop, Goodbye!
+
 ```
